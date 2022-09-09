@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap">
+    <link rel="shortcut icon" type="image/x-icon" href="./Imagens/favicon.ico" />
+
+    <title>Cripto</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header">
+           
+        </header>
+        <section class="input">
+            <div>
+                <textarea id="criptografar" type="text" placeholder="Digite seu texto aqui."
+                    class="descriptografar"></textarea>
+            </div>
+            <div class="todos-botoes">
+
+                <p><img src="./Imagens/alerta.png" alt="imagem de alerta" /> Apenas letras minúsculas e palavras sem
+                    acento.</p>
+            </div>
+            <div class="todos-botoes">
+                <button type="submit" id="botao-criptografar" class="botao-geral"
+                    onclick="encrypt()">Criptografar</button>
+                <button type="submit" id="botao-descriptografar" class="botao-geral"
+                    onclick="descrypt()">Descriptografar</button>
+            </div>
+        </section>
+        <aside class="aside">
+            <div class="retangulo">
+                <div>
+                    <img src="./Imagens/photo-1.png" alt="Letras de uma máquina de escrever" class="imagem-retangulo"
+                        id="imagem-retangulo" />
+                </div>
+                <div class="mensagem-retangulo">
+                    <div id="texto-retangulo">
+                        <p>Nenhuma mensagem encontrada.</p>
+                    </div>
+                    <div>
+                        <textarea id="descriptografar"
+                            placeholder="Digite um texto que você deseja criptografar ou descriptografar."
+                            class="input-retangulo"></textarea>
+                    </div>
+                    <div>
+                        <button id="botao-copiar" type="button" class="botao-geral" onclick="copiaTexto()">Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <footer>
+            <div class="imagem-footer">
+                <a href="https://github.com/nfreitaz"><img src="./Imagens/logoGit.png" alt="Logo Git Hub"class="logos"/></a>
+                <a href="https://www.linkedin.com/in/nayara-freitasz/"><img src="./Imagens/logoLinkedin.png"
+                        alt="Logo Linkedin"class="logos"/><a>
+                <p>©Copyright 2022 by ME. All rights reversed.</p> 
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
